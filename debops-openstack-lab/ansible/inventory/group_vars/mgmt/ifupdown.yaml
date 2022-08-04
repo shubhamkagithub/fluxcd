@@ -1,0 +1,14 @@
+---
+ifupdown: True
+ifupdown__interfaces:
+  'br0':
+    state: absent
+  'br1':
+    state: absent
+
+  'ens3':
+    inet: 'static'
+    inet6: False
+    weight_class: 'mapping'
+    address: "{{ ansible_host }}/24"
+    gateway: "{{ mgmt_gateway }}"

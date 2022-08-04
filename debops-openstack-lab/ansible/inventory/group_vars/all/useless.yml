@@ -1,0 +1,13 @@
+ferm__enabled: False
+
+nullmailer__enabled: False 
+nullmailer__mailname: '{{ ansible_hostname }}'
+nullmailer__domain: 'nfv1.o2.cz'
+nullmailer__fqdn: '{{ ansible_hostname }}'
+
+debops_legacy__remove_packages:
+- name: 'cloud-init'
+  state: 'absent'
+
+resolvconf__static_enabled: False
+resolvconf__enabled: False

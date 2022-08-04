@@ -1,0 +1,4 @@
+---
+root_account__password_update: True
+root_account__pasword_length: '12'
+#root_account__password: '{{ lookup("password", secret + "/credentials/" + inventory_hostname + "/root_account/password encrypt=sha512_crypt length=" + root_account__password_length) }}'

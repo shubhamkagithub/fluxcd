@@ -1,0 +1,4 @@
+---
+swapfile__files: 
+  - path: '/swap.img'
+    state: 'absent'

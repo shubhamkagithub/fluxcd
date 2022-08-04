@@ -1,0 +1,118 @@
+# This is an Ansible inventory file in INI format. You can define a list of
+# hosts and groups to be managed by this particular inventory.
+
+# Hosts listed under [debops_all_hosts] will have common DebOps plays
+# ran against them. It will include services such as iptables, DNS, Postfix,
+# sshd configuration and more.
+#
+# View the list here:
+# https://github.com/debops/debops/blob/master/ansible/playbooks/common.yml
+#
+# You should check Getting Started guide for useful suggestions:
+# https://docs.debops.org/en/master/introduction/getting-started.html
+
+# Your host was not detected as compatible with DebOps playbooks, so you will
+# not be able to leverage the above features on your current operating system.
+# You can however use a virtual machine as the Ansible Controller.
+
+[debops_all_hosts:vars]
+ansible_ssh_user=ubuntu  
+ansible_python_interpreter=/usr/bin/python3 
+[all:vars]
+mgmt_gateway="10.3.0.1"
+
+[all]
+
+master-01 ansible_host=10.3.0.79
+ctl-1  ansible_host=10.3.0.22
+ctl-2  ansible_host=10.3.0.82
+ctl-3  ansible_host=10.3.0.95
+cmp-1  ansible_host=10.3.0.57
+cmp-2  ansible_host=10.3.0.215
+cmp-3  ansible_host=10.3.0.20
+cfg01  ansible_host=10.3.0.87
+
+[mgmt]
+cfg01
+
+[master]
+master-01
+
+[ctl]
+ctl-1  ansible_host=10.3.0.22
+ctl-2  ansible_host=10.3.0.82
+ctl-3  ansible_host=10.3.0.95
+
+[cmp]
+cmp-1
+cmp-2
+cmp-3
+
+[debops_all_hosts:children]
+master
+ctl
+cmp
+mgmt
+
+[debops_service_kmod:children]
+master
+ctl
+cmp
+worker
+mgmt
+
+[debops_service_sysctl:children]
+master
+ctl
+cmp
+worker
+mgmt
+
+[debops_service_sysfs:children]
+master
+ctl
+cmp
+worker
+mgmt
+
+[debops_service_swapfile:children]
+master
+ctl
+cmp
+worker
+mgmt
+
+[debops_service_grub:children]
+master
+ctl
+cmp
+worker
+mgmt
+
+# Network configuration
+[debops_service_netbase:children]
+master
+ctl
+cmp
+worker
+
+[debops_service_ifupdown:children]
+master
+ctl
+cmp
+worker
+mgmt
+
+# LVM configuration
+#[debops_service_lvm:children]
+#kvm
+
+[debops_service_debops_legacy:children]
+master
+ctl
+cmp
+worker
+mgmt
+#[debops_service_libvirt:children]
+
+#[debops_service_libvirtd_qemu:children]

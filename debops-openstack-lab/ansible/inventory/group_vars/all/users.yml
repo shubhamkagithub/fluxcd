@@ -1,0 +1,37 @@
+---
+
+system_users__enabled: True
+
+
+system_users__accounts:
+
+  - name: 'lmercl'
+    admin: True
+    shell: '/bin/bash'
+    sshkeys_exclusive: True
+    sshkeys: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHLQt0YgRUAr8E0hH23AChxKAvG5jgNIlmUNCC9pZbxqrXPWjf+1UdXvo+Rsj+DFBlnRq/EyatHcSnyAJcll6ZBbuhwLGOZ+iLHog0fh1o9Jf0hMZV3Vw4l3KTAwS4qgZx8C9IKyYpI/zcrOOU+2kkolOialpSNG20MGW5ot3FqJpqAxUgSYCOoYuKIYyhvcXY/NS3tKm7bSniTfMHfOkfSBTSyvYqRsoR1dLeaN5rarVZOHHQHshi8817fIFFSZPDZcqqsqAdxFINY22gdmvrYJ4ujKVjXlmTQo8EnH7bRnOUb1LAyDDyiNgqIqP6E2M6wiL9p6wqDKGHXi8kVPvv lmercl@lmercl-macbook"
+
+  - name: 'chnyda'
+    admin: True
+    shell: '/bin/bash'
+    sshkeys: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDEwRjybjADhZbZbuJi6v7EV7FaoIwoq0VpJlI4wm3gvMIt6RHMJAzEhDtL6ehBm+dRXDd/a10HBKSf14C1qn7g2u63GEvBC3IRyLTr9FBug1XZPn3+/CoefIGtTMw5bcdyie96fw4HIYyxRF2AcN2y8dAEhWMN5SsXjsXN6b3aq5eeaZei1nG6wLcul153YlLbRxcVIbbaZ4CKFZIdzTME+u/ePaqmSIjMCJk9jnJ7XOyCPx6ChZN/4Sg/yxxi5Z6Q1UnPwtItJ8hSc4nEEMe38jpWRtSt7SUSMQS+OqDG7OGEIONN8yJZIxbs8Z7aAA22qBRYSzw/bnhbB37D1w8cCluVVIR3xaC4o/8kUxEmmjGp6xDzFx/t5F9HxWq/AeCn4L/I6pq/qVR0lvvnWbeWeKFK+b6M6C4aCqHrC5oDcjoe82bBVGl9u1/Aw3pWVf/H5mu1zlAdxbGx6JYay+dcx0CAcWu/UZQi4v46I3sy9PTIWTdhpb4kB6abtZtRQz6gqt8J/SRxOErSHxNQcuns6Y7jh3b++1OToFIuk2Y98NX//djYfTqiRW22QBEXQMyy8E6uSluOJNDteeVFOYJxM1A+OWfXqB/5Xz0lfe6WFhygSd2pQhBfSNUezsx9Ya26FTq4/T0OXL4UW6uHSIWniipbfj4B2jit7JkSnJxbVw== ced.hnyda@gmail.com"
+
+  - name: 'askotnicky'
+    admin: True
+    shell: '/bin/bash'
+    sshkeys: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAB/yzGmTV7a6ch5ks5z0tQIeapO7iQjyE/pLDJoL91P12LX0QpjyNT/4fzh5vrib1P6J5x/UVT7zivWP7ps5ZxnGbRk51iVzCTKfLB0j547SUoDiFOsyEAON62dw716icjkkMrDzcuOuGuSw/Ksn6dSELxHlDUJkz58rg0xBE0lIVH0Q1iB5SFhBO/EoKt7u79h+fiiNtw3yLxBZ8/Rn+ehFsuGK28QLcSujcOmA4R15B9A8hJFLl1PCI/ANMYiLjNOTCPOQnrNvG//y7Z5vsS1SvXHjAij5psYbFGB3nV+u1ww9eD/uPOUa7JWr9AAat/xu/Vst3f0KNC1dEwp9pEpyTf/WUPH8lbgzTa2nvFQH94rybs6IT4V6clRwNp0B1VVXIIDwweP9FNJ9FbV5vZfZHLgcAklRWQrrVBRCzOwyNDWA/N2ZROIrgldYpfUJ2tXSYKgl66X+x16HL+CEx/lH4NoP9HgYk2EuYgjoWjOjAoQJcIEWE9pdaN7FfnLHyYI5u/2xpjWmn0LCAdXUcuB7yJmIJqvYT64slKWu7eYN8i0oLfyAL1MRFmQbvlPRJTPmU7LlYc+7NN5IP4mwqUPC1MHv4Ouj6EahAVwhwUar5gSzI9jeegO/M/E3BzGdusqibhrG8wtexnaMVEKP90Y18EZHS0BLCCgr08Bp1OG+0= adam@AON"
+
+  - name: 'hemant'
+    admin: True
+    shell: '/bin/bash'
+    sshkeys: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAF4CFMJubziiSXE3J+49ZFLIwhqYoDZ8eHSbuVfBmIPuk6eugCq0I/aybfUG1WIC2WDOA5cgbWOwqmZ7tf9QYSxgDexCLl3ojNGM9fQ9UaDzHa1EPgNS0JB1LFGgG8RlFsvzKdQU+yW/GZfWzrWwY8Gqt4MQXb8P8uQa7vDsXKkB/PXtfTQlsxR2fZDt6XyjYwBaobXvWr/wb8k4Tubi+EKao592KVJf2PMqo66gOQ7bP9CKYZd3MziHzYYOlX1xCZ38q1zWP+tpt7onR6jHrYfMooNgcgG5kV2eqtLgZAmNG5mH4lCRP7e+zWajqiczIJbWPHofbgdXw9M1aJqk3 hemant@hemant-ThinkPad-E470"
+
+  - name: 'jspunar'
+    admin: True
+    shell: '/bin/bash'
+    sshkeys: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDMDoV/q0s7W8PSfmAkCJFBZXJuzWhsuAn05NEcSFYQPtBPLjOfqULBGvnW1gnJongCVfZXdDHeFp5F0NOOMIV3bh4SHI5415IKVmSnlAxe9m9aWCSXupp5+JKRNTj/Pj0soCp7NxSG7brEbAqh1VyGJILgWQz6YAk5AsxxMd2JZR3WXS/8y3CkK5B9scQw15JsGPPMrJ9MHe9FxDNx9NfK11V6x/TYX6qQGeKxjP1InLHTfMRyF90I/hzn9zydfds4w+bchvNduEnIHyxXl4zOjaiWhELihzH7HSR9dGhfi54GgvdADfQfT9sYoQh0IMdqaCb+6p8j3wSWL/4eaSB1 jakub@itera-think"
+
+  - name: 'shubham'
+    admin: True
+    shell: '/bin/bash'
+    sshkeys: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDJo1+/Qr15MAS/4fSzKne1GLZeCEQ0t1hTDlW29+/DoV9bt10rqh9pZwIeHyoqqpvWKPIesUgxT1nV+TMGtgKYgy8tIV+mbFdaTTUoJ20yHS9vRSJyh41gnUluiN6PutfHrvvNMjXfHfJOXxuYgaq+KVhe+7arfj5Nze2zRg1A8fl2APoCNleh+tHaCeXOdHjpadpLz/BOxE8fY3Vrdd0PKxvz1yFLLVaw9leHcXFU3GLlepYFXAf4K8YqfRkqphVSlt4w2tPiZwxgQEDQZSl9o2BiSjdWE+wciZAhI0cPKa2uBTNEvIb3BxTEoGO/cOvuN4tzMYfiMNJLQvAkyvonHUKLkFywYpz6QQ2cOCTnz9ZwKM70b01A0UmM5mkUvTndNF28XTtD3pxl4DqM6fzGmWtGgJ4igJM+N0GwLeuDZWNn0Z5pzGOgZbjauUUO9BKs9mJVCKTO6sjzcdipaYmyCWVP52pUigDaeyQYjr6EG/1cbdxXPhr/lC3zA8U6pTc= shubham@shubham"

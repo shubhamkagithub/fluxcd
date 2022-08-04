@@ -1,0 +1,10 @@
+---
+ntp__daemon_enabled: true
+
+ntp__daemon: ntpd
+
+ntp__servers:
+  - '0.north-america.pool.ntp.org iburst'
+  - '1.north-america.pool.ntp.org iburst'
+
+ntp__timezone: 'Etc/UTC'

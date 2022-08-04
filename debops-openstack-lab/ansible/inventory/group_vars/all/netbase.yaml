@@ -1,0 +1,13 @@
+---
+netbase_domain: 'beskar.cloud.test.cz'
+netbase__enabled: True
+netbase__default_hosts:
+  - '127.0.1.1': [ '{{inventory_hostname}}','{{inventory_hostname_short}}' ]
+  - '127.0.0.1': [ 'localhost' ]
+  - '{{hostvars["master-01.beskar.cloud.test.cz"].ansible_host}}' : ['{{hostvars["master-01.beskar.cloud.test.cz"].inventory_hostname}}', '{{hostvars["master-01.beskar.cloud.test.cz"].inventory_hostname_short}}']
+  - '{{hostvars["ctl-1.beskar.cloud.test.cz"].ansible_host}}' : ['{{hostvars["ctl-1.beskar.cloud.test.cz"].inventory_hostname}}', '{{hostvars["ctl-1.beskar.cloud.test.cz"].inventory_hostname_short}}']
+  - '{{hostvars["ctl-2.beskar.cloud.test.cz"].ansible_host}}' : ['{{hostvars["ctl-2.beskar.cloud.test.cz"].inventory_hostname}}', '{{hostvars["ctl-2.beskar.cloud.test.cz"].inventory_hostname_short}}']
+  - '{{hostvars["ctl-3.beskar.cloud.test.cz"].ansible_host}}' : ['{{hostvars["ctl-3.beskar.cloud.test.cz"].inventory_hostname}}', '{{hostvars["ctl-3.beskar.cloud.test.cz"].inventory_hostname_short}}']
+  - '{{hostvars["cmp-1.beskar.cloud.test.cz"].ansible_host}}' : ['{{hostvars["cmp-1.beskar.cloud.test.cz"].inventory_hostname}}', '{{hostvars["cmp-1.beskar.cloud.test.cz"].inventory_hostname_short}}']
+  - '{{hostvars["cmp-2.beskar.cloud.test.cz"].ansible_host}}' : ['{{hostvars["cmp-2.beskar.cloud.test.cz"].inventory_hostname}}', '{{hostvars["cmp-2.beskar.cloud.test.cz"].inventory_hostname_short}}']
+  - '{{hostvars["cmp-3.beskar.cloud.test.cz"].ansible_host}}' : ['{{hostvars["cmp-3.beskar.cloud.test.cz"].inventory_hostname}}', '{{hostvars["cmp-3.beskar.cloud.test.cz"].inventory_hostname_short}}']
